@@ -1,0 +1,19 @@
+{
+  "presets": ["es2015", "stage-2", "fbjs"],
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-es2015-destructuring",
+    "transform-async-to-generator",
+    "syntax-async-functions",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        ".": "@root",
+        "./src": "@phantomscript",
+        "./cli": "@cli",
+        "./constants": "@constants",
+        "./fn": "@fn"
+      }
+    }]
+  ]
+}
