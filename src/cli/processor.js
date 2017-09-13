@@ -1,4 +1,4 @@
-import F from 'fluture'
+// import F from 'fluture'
 import {curry} from 'f-utility'
 import {encode} from '@phantomscript/encode'
 import {decode} from '@phantomscript/decode'
@@ -8,11 +8,12 @@ import {decode} from '@phantomscript/decode'
 // const log = console.log.bind(console)
 
 export const processor = curry((STD, out, $) => {
-  const {encode: encodeData, args, output, stdin = false} = $
+  const {encode: encodeData = true, args, output, stdin = false} = $
   console.log(`$`, $)
   console.log(`stdinP`, STD)
   console.log(`out`, out)
   const convert = (data) => {
+    console.log(`|data|${data}|`)
     if (!data) {
       throw new Error(`Unable to convert null input`)
     }
@@ -24,15 +25,7 @@ export const processor = curry((STD, out, $) => {
   }
   if (stdin) {
     console.log(`STDIN`)
-    STD
-      // .map(
-      //   (x) => {
-      //     console.log(`>>${x}<<`)
-      //     return x
-      //   }
-      // )
-      .catch(console.warn)
-      .then(convert)
+    return STD.fork(console.warn, convert)
   }
   convert(args[0])
 })
