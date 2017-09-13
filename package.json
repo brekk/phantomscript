@@ -59,6 +59,8 @@
     "commander": "^2.11.0",
     "entrust": "^0.0.7",
     "f-utility": "^3.3.0",
+    "fluture": "^7.1.2",
+    "get-stdin": "^5.0.1",
     "katsu-curry": "^0.4.0",
     "ramda": "^0.24.1"
   },
