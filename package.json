@@ -1,7 +1,7 @@
 {
   "name": "phantomscript",
   "version": "0.0.1",
-  "description": "make some stuff",
+  "description": "convert strings to zero-width unicode or vice-versa",
   "main": "phantomscript.js",
   "scripts": {
     "dependencies": "nps dependencies",
