@@ -7,13 +7,15 @@ import {decode} from '@phantomscript/decode'
 
 // const log = console.log.bind(console)
 
-export const processor = curry((stdinP, out, $) => {
+export const processor = curry((STD, out, $) => {
   const {encode: encodeData, args, output, stdin = false} = $
   console.log(`$`, $)
-  console.log(`stdinP`, stdinP)
+  console.log(`stdinP`, STD)
   console.log(`out`, out)
   const convert = (data) => {
-    console.log(`|data|${data}|`)
+    if (!data) {
+      throw new Error(`Unable to convert null input`)
+    }
     const process = encodeData ? encode : decode
     const value = process(data)
     const emit = output ? out : console.log
@@ -22,15 +24,15 @@ export const processor = curry((stdinP, out, $) => {
   }
   if (stdin) {
     console.log(`STDIN`)
-    stdinP()
+    STD
       // .map(
       //   (x) => {
       //     console.log(`>>${x}<<`)
       //     return x
       //   }
       // )
+      .catch(console.warn)
       .then(convert)
-      .catch(process.stderr.write)
   }
   convert(args[0])
 })

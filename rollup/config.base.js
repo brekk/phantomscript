@@ -52,7 +52,7 @@ module.exports = {
       main: true
     }),
     cleanup({
-      comments: `none`
+      // comments: `none`
     }),
     babili({
       // removeConsole: true
