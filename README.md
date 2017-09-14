@@ -1,4 +1,9 @@
-# phantomscript
+     ____  _                 _                                _       _   
+    |  _ \| |__   __ _ _ __ | |_ ___  _ __ ___  ___  ___ _ __(_)_ __ | |_
+    | |_) | '_ \ / _` | '_ \| __/ _ \| '_ ` _ \/ __|/ __| '__| | '_ \| __|
+    |  __/| | | | (_| | | | | || (_) | | | | | \__ \ (__| |  | | |_) | |_
+    |_|   |_| |_|\__,_|_| |_|\__\___/|_| |_| |_|___/\___|_|  |_| .__/ \__|
+                                                               |_|        
 
 A command-line implementation of the Phantomscript conversion described [here](https://github.com/jagracey/PhantomScript)
 
@@ -25,3 +30,7 @@ convert a string into a zero-width representation
 -   `payload` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** a payload to encode
 
 Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** encoded string
+
+# Contributing
+
+This project is very much still in development, please feel free to submit issues or pull requests if this library doesn't do what you need it to.
