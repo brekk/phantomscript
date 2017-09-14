@@ -1,2 +1,3 @@
-export {cli} from './executable'
+export {exe} from './executable'
+export {cmd} from './cmd'
 export {processor} from './processor'
