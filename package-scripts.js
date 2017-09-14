@@ -70,7 +70,7 @@ module.exports = {
       }
     },
     readme: {
-      script: `documentation readme README.md -s "API" src/*/*.js`,
+      script: `documentation readme README.md -s "API" src/*.js src/*/*.js`,
       description: `regenerate the readme`
     },
     lint: {
