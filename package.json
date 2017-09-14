@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "convert strings to zero-width unicode or vice-versa",
   "main": "phantomscript.js",
+  "bin": {
+    "boo": "./boo.js"
+  },
   "scripts": {
     "dependencies": "nps dependencies",
     "readme": "nps readme",
