@@ -6,13 +6,13 @@
     "transform-async-to-generator",
     "syntax-async-functions",
     ["module-resolver", {
-      "root": ["./src"],
+      "root": ["."],
       "alias": {
-        ".": "@root",
-        "./src": "@phantomscript",
-        "./cli": "@cli",
-        "./constants": "@constants",
-        "./fn": "@fn"
+        "@root": ".",
+        "@phantomscript": "./src",
+        "@cli": "./src/cli",
+        "@constants": "./src/constants",
+        "@fn": "./src/fn"
       }
     }]
   ]
