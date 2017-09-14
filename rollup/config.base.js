@@ -9,11 +9,14 @@ const buble = require(`rollup-plugin-buble`)
 const json = require(`rollup-plugin-json`)
 const pkg = require(`../package.json`)
 // console.log(`pkg`, pkg, pkg.dependencies)
+
+const CORE_MODULES = [`fs`]
+
 const external = (
   pkg && pkg.dependencies ?
     Object.keys(pkg.dependencies) :
     []
-)
+).concat(CORE_MODULES)
 // const {default: ts} = require(`rollup-plugin-ts`)
 // const typescript = require(`typescript`)
 // const tsconfig = require(`../tsconfig.json`)

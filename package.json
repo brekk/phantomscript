@@ -21,9 +21,9 @@
     "url": "git+https://github.com/brekk/phantomscript.git"
   },
   "keywords": [
-    "build",
-    "root",
-    "base"
+    "zero-width characters",
+    "phantomscript",
+    "invisible"
   ],
   "author": "brekk",
   "license": "ISC",
