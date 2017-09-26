@@ -10,7 +10,7 @@ const json = require(`rollup-plugin-json`)
 const pkg = require(`../package.json`)
 // console.log(`pkg`, pkg, pkg.dependencies)
 
-const CORE_MODULES = [`fs`]
+const CORE_MODULES = [`fs`, `tty`, `util`, `net`]
 
 const external = (
   pkg && pkg.dependencies ?
