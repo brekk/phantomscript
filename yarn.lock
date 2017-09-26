@@ -1401,6 +1401,18 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
+buble@^0.15.0:
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/buble/-/buble-0.15.2.tgz#547fc47483f8e5e8176d82aa5ebccb183b02d613"
+  dependencies:
+    acorn "^3.3.0"
+    acorn-jsx "^3.0.1"
+    acorn-object-spread "^1.0.0"
+    chalk "^1.1.3"
+    magic-string "^0.14.0"
+    minimist "^1.2.0"
+    os-homedir "^1.0.1"
+
 buble@^0.16.0:
   version "0.16.0"
   resolved "https://registry.yarnpkg.com/buble/-/buble-0.16.0.tgz#1773e7b5a383f5c722af6b1b16b2ba49cb866a98"
@@ -2022,7 +2034,7 @@ doctrine@^2.0.0:
     esutils "^2.0.2"
     isarray "^1.0.0"
 
-documentation@5.3.2:
+documentation@5.3.2, documentation@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/documentation/-/documentation-5.3.2.tgz#45a106cd58bcb74ec0446431e5777a063fab6731"
   dependencies:
@@ -2270,7 +2282,7 @@ eslint-plugin-promise@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.5.0.tgz#78fbb6ffe047201627569e85a6c5373af2a68fca"
 
-eslint-plugin-react@7.4.0:
+eslint-plugin-react@7.4.0, eslint-plugin-react@^7.3.0:
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.4.0.tgz#300a95861b9729c087d362dd64abcc351a74364a"
   dependencies:
@@ -2290,7 +2302,7 @@ eslint-scope@^3.7.1:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint@4.7.2:
+eslint@4.7.2, eslint@^4.6.1:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.7.2.tgz#ff6f5f5193848a27ee9b627be3e73fb9cb5e662e"
   dependencies:
@@ -2756,6 +2768,54 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+germs@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/germs/-/germs-0.0.3.tgz#276a2a5500f5ae52278486fe1292d3926a0e51f8"
+  dependencies:
+    babel-cli "^6.26.0"
+    babel-core "^6.26.0"
+    babel-eslint "^8.0.0"
+    babel-jest "^21.0.2"
+    babel-plugin-module-resolver "^2.7.1"
+    babel-plugin-syntax-async-functions "^6.13.0"
+    babel-plugin-transform-async-to-generator "^6.24.1"
+    babel-plugin-transform-es2015-destructuring "^6.23.0"
+    babel-plugin-transform-object-rest-spread "^6.26.0"
+    babel-preset-es2015 "^6.24.1"
+    babel-preset-fbjs "^2.1.4"
+    babel-preset-react "^6.24.1"
+    babel-preset-stage-2 "^6.24.1"
+    babel-register "^6.26.0"
+    chalk "^2.1.0"
+    depcheck "^0.6.7"
+    documentation "^5.3.2"
+    eslint "^4.6.1"
+    eslint-config-standard "^10.2.1"
+    eslint-plugin-ava "^4.2.2"
+    eslint-plugin-babel "^4.1.2"
+    eslint-plugin-eslint-comments "^1.0.3"
+    eslint-plugin-fp "^2.3.0"
+    eslint-plugin-import "^2.7.0"
+    eslint-plugin-node "^5.1.1"
+    eslint-plugin-promise "^3.5.0"
+    eslint-plugin-react "^7.3.0"
+    eslint-plugin-standard "^3.0.1"
+    execa "^0.8.0"
+    husky "^0.14.3"
+    jayin "^0.0.3"
+    jest "^21.0.2"
+    nps "^5.7.1"
+    nps-utils "^1.3.0"
+    rollup "^0.49.3"
+    rollup-plugin-alias "^1.3.1"
+    rollup-plugin-babel-minify "^3.1.2"
+    rollup-plugin-buble "^0.15.0"
+    rollup-plugin-cleanup "^1.0.1"
+    rollup-plugin-commonjs "^8.2.1"
+    rollup-plugin-json "^2.3.0"
+    rollup-plugin-node-resolve "^3.0.0"
+    rollup-plugin-progress "^0.4.0"
 
 get-caller-file@^1.0.1:
   version "1.0.2"
@@ -3764,7 +3824,7 @@ jest-validate@^21.1.0:
     leven "^2.1.0"
     pretty-format "^21.1.0"
 
-jest@21.1.0:
+jest@21.1.0, jest@^21.0.2:
   version "21.1.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-21.1.0.tgz#77c7baa8aa9e8bace7fe41a30d748ab56e89476a"
   dependencies:
@@ -5197,6 +5257,13 @@ rollup-plugin-buble@0.16.0:
     buble "^0.16.0"
     rollup-pluginutils "^2.0.1"
 
+rollup-plugin-buble@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-buble/-/rollup-plugin-buble-0.15.0.tgz#83c3e89c7fd2266c7918f41ba3980313519c7fd0"
+  dependencies:
+    buble "^0.15.0"
+    rollup-pluginutils "^1.5.0"
+
 rollup-plugin-cleanup@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/rollup-plugin-cleanup/-/rollup-plugin-cleanup-1.0.1.tgz#ca056c74fe6ea21783f99851963b173cbe8e9359"
@@ -5244,7 +5311,7 @@ rollup-pluginutils@*, rollup-pluginutils@^2.0.1:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
 
-rollup-pluginutils@^1.5.1:
+rollup-pluginutils@^1.5.0, rollup-pluginutils@^1.5.1:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-1.5.2.tgz#1e156e778f94b7255bfa1b3d0178be8f5c552408"
   dependencies:
@@ -5254,6 +5321,10 @@ rollup-pluginutils@^1.5.1:
 rollup@0.50.0:
   version "0.50.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.50.0.tgz#4c158f4e780e6cb33ff0dbfc184a52cc58cd5f3b"
+
+rollup@^0.49.3:
+  version "0.49.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.49.3.tgz#4cce32643dd8cf2154c69ff0e43470067db0adbf"
 
 run-async@^2.2.0:
   version "2.3.0"
