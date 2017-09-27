@@ -6,7 +6,7 @@ const external = (
   pkg && pkg.dependencies ?
     Object.keys(pkg.dependencies) :
     []
-)
+).concat(`fs`)
 const local = (x) => path.resolve(__dirname, x)
 
 module.exports = bundle({
