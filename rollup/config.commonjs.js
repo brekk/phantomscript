@@ -1,11 +1,27 @@
 const pkg = require(`../package.json`)
-const base = require(`./config.base`)
-/* eslint-disable fp/no-mutating-assign */
-module.exports = Object.assign({}, base, {
+const path = require(`path`)
+const {bundle} = require(`germs/germs`)
+
+const external = (
+  pkg && pkg.dependencies ?
+    Object.keys(pkg.dependencies) :
+    []
+)
+const local = (x) => path.resolve(__dirname, x)
+
+module.exports = bundle({
+  name: pkg.name,
+  alias: {
+    [`@root`]: local(`..`),
+    [`@phantomscript`]: local(`../src`),
+    [`@cli`]: local(`../src/cli`),
+    [`@constants`]: local(`../src/constants`),
+    [`@fn`]: local(`../src/fn`)
+  },
+  external,
   input: `src/index.js`,
   output: {
     file: `./${pkg.name}.js`,
     format: `cjs`
   }
 })
-/* eslint-enable fp/no-mutating-assign */

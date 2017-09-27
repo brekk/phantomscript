@@ -19,7 +19,7 @@ const writeFile = curry((file, options, data) => new F(
 const log = (x) => x && process.stdout.write(x)
 // const warn = (x) => x && console.warn(x)
 
-export const processor = curry((STD, $) => {
+export const processor = curry((STDIN, $) => {
   const {encode: encodeData = true, decode: decodeData = false, args, output, stdin = false} = $
   let process = encode
   if (encodeData) {
@@ -44,7 +44,7 @@ export const processor = curry((STD, $) => {
     )
   }
   if (stdin || args.length === 0) {
-    STD.fork(log, convert)
+    STDIN.fork(log, convert)
     return
   }
   convert(args[0])
