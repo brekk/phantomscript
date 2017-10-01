@@ -1,6 +1,6 @@
 {
   "name": "phantomscript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "convert strings to zero-width unicode or vice-versa",
   "main": "phantomscript.js",
   "bin": {
