@@ -61,6 +61,16 @@ convert a string into a zero-width representation
 
 Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** encoded string
 
+## test
+
+test whether a given input has zero-width characters in it
+
+**Parameters**
+
+-   `whatever` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** a string or something
+
+Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** whether the input has some zero-width characters in it
+
 # Contributing
 
 This project is very much still in development, please feel free to [submit issues](https://github.com/brekk/phantomscript/issues/new) or [pull requests](https://github.com/brekk/phantomscript/compare) if this library doesn't do what you need it to.
