@@ -1,6 +1,6 @@
 const pkg = require(`../package.json`)
 const path = require(`path`)
-const {bundle} = require(`germs/germs`)
+const {bundle} = require(`germs`)
 
 const external = (
   pkg && pkg.dependencies ?
