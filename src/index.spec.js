@@ -1,5 +1,5 @@
 /* global test */
-import {t} from './test-helpers'
+import {t} from 'germs'
 import {test as detect, encode, decode} from './index'
 
 test(`encode is a unary function which takes a string and returns a zero-width string`, () => {

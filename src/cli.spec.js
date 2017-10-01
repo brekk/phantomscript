@@ -1,7 +1,7 @@
 /* global test */
 import path from 'path'
 import execa from 'execa'
-import {t} from './test-helpers'
+import {t} from 'germs'
 
 const CLI = `node ${path.resolve(__dirname, `../boo.js`)}`
 
